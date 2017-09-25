@@ -1,0 +1,17 @@
+#!/bin/sh
+
+sudo rm /var/lib/dpkg/lock
+sudo dpkg --configure -a
+
+cd
+sudo apt install vim -y
+mkdir .vim
+cd .vim
+mkdir bundle
+udo apt install git -y
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle
+sudo apt-get install build-essential cmake -y
+git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
+sudo apt-get install openssh-server -y
+sudo apt-get install net-tools -y
+sudo apt-get install libncurses5-dev -y
