@@ -1,4 +1,4 @@
-#/usr/bin/sh
+#!/bin/sh
 pwd
 ls -l
 banner 'The End!'

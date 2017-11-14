@@ -1,3 +1,3 @@
-#/usr/bin/sh
+#!/bin/sh
 mv $1 $2
 cat $2

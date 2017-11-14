@@ -1,4 +1,4 @@
-#/usr/bin/sh
+#!/bin/sh
 
 echo "echo normal format"
 echo -e "\033[1mEcho bold format\033[0m"

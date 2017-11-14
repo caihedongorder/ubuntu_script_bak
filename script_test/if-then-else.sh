@@ -1,4 +1,4 @@
-#/usr/bin/sh
+#!/bin/sh
 
 echo "Please input source and target file name:"
 

@@ -1,4 +1,4 @@
-#/usr/bin/sh
+#!/bin/sh
 a=2 b=3 c=123 d=123
 
 j=$a+$b

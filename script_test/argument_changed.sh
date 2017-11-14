@@ -1,4 +1,4 @@
-#/usr/bin/sh
+#!/bin/sh
 #Change your name
 echo "Initial Augment:$*"
 echo "Before Change,it was :$*"

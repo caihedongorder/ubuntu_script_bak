@@ -1,4 +1,4 @@
-#/usr/bin/sh
+#!/bin/sh
 
 echo The total number of the current directory is=$#
 

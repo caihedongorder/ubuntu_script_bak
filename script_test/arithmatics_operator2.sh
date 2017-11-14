@@ -1,4 +1,4 @@
-#/usr/bin/sh
+#!/bin/sh
 
 a=10.5
 b=3.5
