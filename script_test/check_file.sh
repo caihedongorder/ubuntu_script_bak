@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "Enter a name:"
+echo "Enter a name:\c"
 read name
 
 #check if it's file name
