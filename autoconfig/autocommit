@@ -1,0 +1,5 @@
+#!/bin/sh
+
+git add */*.ac
+git commit -m='auto commit'
+git push
