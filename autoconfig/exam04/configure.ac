@@ -1,0 +1,27 @@
+
+AC_INIT(program,1.0)
+
+dnl List of Object files as determined by autoconf
+object_files=""
+dnl Switch to a C++ compiler,and check if it works.
+AC_LANG(C++)
+AC_PROG_CXX
+
+a=1
+AC_CHECK_HEADER(zlib.h,[],[a=0])
+AC_SEARCH_LIBS(deflate,z,[],[a=0])
+
+if test $a == 1
+then
+    object_files="$object_files hello_libz.o"
+else
+    object_files="$object_files hello_no_libz.o"
+fi
+
+dnl ac_cv_header_zlib_h=yes
+dnl ac_cv_search_deflate=-lz
+
+dnl Make AC_OUTPUT substitute the contents of $object_files for @objs@
+AC_SUBST(objs,["$object_files"])
+dnl Process Makefile.in to create MakeFile
+AC_OUTPUT(Makefile)
