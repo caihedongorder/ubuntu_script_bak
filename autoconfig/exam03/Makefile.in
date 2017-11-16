@@ -1,0 +1,14 @@
+
+LDFLAGS=@LDFLAGS@
+LIBS=@LIBS@
+CXX=@CXX@
+LD=@CXX@
+CXXFLAGS=@CXXFLAGS@
+
+
+program: program.o
+	$(LD) -o $@ $^ $(LDFLAGS) $(LIBS)
+	
+.PHONY: clean
+clean:
+	rm -f program *.o
